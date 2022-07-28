@@ -3,10 +3,11 @@
 
 ### 目录说明
 - src: 自定义组件源码；
-- dist: quickapp构建后文件存放目录；
+- build: quickapp构建后文件存放目录；
+- dist: quickapp构建后的rpk文件存放目录；
 - web: 自定义组件web预览模块（爱速搭页面编辑器预览需要）；
 - src/components: 存放快应用自定义组件源码（quickapp技术栈）；
-- src/vue3Components: 存放H5自定义组件源码（vue3技术栈）；
+- src/h5Components: 存放H5自定义组件源码；
 - src/components/info-card/index.ux: 快应用自定义组件内容文件；
 - src/components/xxx/assets: 存放自定义组件组件静态资源，比如 css、img等，此处存放的静态资源会经过webpack构建；
 - src/pages: 存放项目页面级代码，开发quickapp自定义组件时仅用于充当预览展示页；
