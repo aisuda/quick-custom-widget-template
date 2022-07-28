@@ -21,6 +21,32 @@
     "web/*",
     "src/components/*"
   ],
+  "aipage-widgets": [
+    {
+      "name": "quick-info-card",
+      "framework": "vue3",
+      "type": "quick-info-card",
+      "entry": "/web/renderer.umd",
+      "files": [
+        "/web/renderer.css"
+      ],
+      "editorPlugin": {
+        "name": "quick-info-card-plugin",
+        "description": "信息展示卡片",
+        "pluginEntry": "/web/plugin.umd",
+        "tag": [
+          "快应用组件"
+        ],
+        "sort": 100
+      }
+    },
+    {
+      "name": "quick-info-card",
+      "framework": "quickapp",
+      "type": "quick-info-card",
+      "srcDir": "/src/components/info-card"
+    }
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
