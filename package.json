@@ -44,7 +44,7 @@
       "name": "quick-info-card",
       "framework": "quickapp",
       "type": "quick-info-card",
-      "srcDir": "/src/components/info-card"
+      "entry": "/src/components/info-card"
     }
   ],
   "husky": {
