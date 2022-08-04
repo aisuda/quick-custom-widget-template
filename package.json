@@ -36,7 +36,10 @@
           "快应用组件"
         ],
         "sort": 100,
-        "device": ["mobile", "quickapp"]
+        "device": [
+          "mobile",
+          "quickapp"
+        ]
       }
     },
     {
@@ -73,7 +76,7 @@
     "@types/quickapp": "npm:quickapp-interface@^1.0.0",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^17.0.13",
-    "amis-widget-cli": "^2.0.5-vue3-beta.1",
+    "amis-widget-cli": "2.0.5-vue3-beta.2",
     "hap-toolkit": "^1.9.10",
     "husky": "^4.2.5",
     "less": "^4.1.3",
