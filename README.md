@@ -68,27 +68,28 @@ $ npm run build2lib
 
 ```bash
   ...
-    "aipage-widgets": [
+  "aipage-widgets": [
     {
-      "name": "quick-info-card", // H5自定义组件名称，必填项
-      "framework": "vue3", // 技术栈类型，必填项
       "type": "quick-info-card", // 自定义组件类型，必填项，同一应用下不允许有重复的自定义组件类型
+      "framework": "vue3", // 技术栈类型，必填项
+      "description": "快应用版信息展示卡片", // 描述，在编辑器左侧组件面板作为描述信息展示，必填项
       "entry": "/web/renderer.umd", // 自定义组件入口文件路径，必填项
-      "files": [  // 自定义组件依赖资源文件路径，非必填项
+      "files": [ // 自定义组件依赖资源文件路径，非必填项
         "/web/renderer.css"
       ],
-      "editorPlugin": {  // amis-editor自定义插件信息
-        "name": "quick-info-card-plugin", // 自定义插件名称，在编辑器左侧组件面板作为title展示，必填项
-        "description": "信息展示卡片", // 自定义插件描述，在编辑器左侧组件面板作为描述信息展示，必填项
-        "pluginEntry": "/web/plugin.umd", // 自定义插件的入口文件，必填项
-        "tag": [  // 自定义插件的分类，必填项
+      "editorPlugin": { // aipage-editor自定义组件信息，组件面板需要
+        "pluginEntry": "/web/plugin.umd", // 自定义组件的入口文件，必填项
+        "tag": [  // 自定义组件的分类，必填项
           "快应用组件"
         ],
-        "sort": 100 // 自定义插件的排序，非必填项
+        "sort": 100, // 自定义组件的排序，非必填项，越小展示越靠前
+        "device": [ // 自定义组件支持的设备类型，必填项
+          "mobile",
+          "quickapp"
+        ]
       }
     },
     {
-      "name": "quick-info-card", // 快应用自定义组件名称，必填项
       "framework": "quickapp", // 快应用技术栈类型，必填项
       "type": "quick-info-card", // 自定义组件类型，必填项，同一应用下不允许有重复的自定义组件类型
       "entry": "/src/components/info-card", // 快应用自定义组件根目录
