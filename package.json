@@ -1,6 +1,6 @@
 {
   "name": "quick-custom-widget-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "aipage-editor自定义组件模板，quickapp版自定义组件，用于开发快应用自定义组件。",
   "keywords": [
     "自定义组件注册器",
@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "vue": "^3.2.33",
-    "vue3-aipage-widget": "^1.0.5"
+    "vue3-aipage-widget": "^1.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
