@@ -1,6 +1,6 @@
 {
   "name": "quick-custom-widget-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "aipage-editor自定义组件模板，quickapp版自定义组件，用于开发快应用自定义组件。",
   "keywords": [
     "自定义组件注册器",

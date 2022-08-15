@@ -48,7 +48,7 @@ module.exports = {
   linkDebug: {
     entry: { // 外链调试（爱速搭中预览本地自定义组件）
       index: [
-        './src/h5Components/info-card/index.js',
+        './src/h5Components/info-card/renderer.js',
         './src/h5Components/info-card/plugin.js',
       ],
     },
@@ -66,7 +66,7 @@ module.exports = {
   // build2lib 用于打包生成环境的js模块
   build2lib: {
     entry: {
-      renderer: './src/h5Components/info-card/index.js',
+      renderer: './src/h5Components/info-card/renderer.js',
       plugin: './src/h5Components/info-card/plugin.js',
     },
     // 用于构建生产环境代码的相关配置信息
